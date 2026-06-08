@@ -5,8 +5,9 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
-const DATA_DIR = join(ROOT, "data");
-const EXPORTS_DIR = join(ROOT, "output", "exports");
+const RUNTIME_ROOT = process.env.VERCEL ? join("/tmp", "google-maps-scraper") : ROOT;
+const DATA_DIR = join(RUNTIME_ROOT, "data");
+const EXPORTS_DIR = join(RUNTIME_ROOT, "output", "exports");
 
 mkdirSync(DATA_DIR, { recursive: true });
 mkdirSync(EXPORTS_DIR, { recursive: true });

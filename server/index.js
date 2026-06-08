@@ -168,6 +168,10 @@ const HOST =
   process.env.HOST ??
   (process.env.NODE_ENV === "production" ? "0.0.0.0" : "127.0.0.1");
 
-app.listen(config.port, HOST, () => {
-  console.log(`Google Maps Dashboard → http://${HOST}:${config.port}`);
-});
+export default app;
+
+if (!process.env.VERCEL) {
+  app.listen(config.port, HOST, () => {
+    console.log(`Google Maps Dashboard → http://${HOST}:${config.port}`);
+  });
+}
