@@ -8,6 +8,7 @@
     "start": "node server/index.js",
     "dev": "node --watch server/index.js",
     "build": "npx puppeteer browsers install chrome-headless-shell",
+    "postinstall": "npm run build",
     "vercel-build": "npm run build && echo Vercel build complete"
   },
   "engines": {
