@@ -8,4 +8,5 @@ data/*.sqlite-*
 !.env.example
 *.log
 .DS_Store
+.cache/
 dashboard/dist/
