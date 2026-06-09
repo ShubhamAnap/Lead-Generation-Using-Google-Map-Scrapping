@@ -6,12 +6,12 @@
   --surface-solid: #1e293b;
   --surface-raised: #0f172a;
   --surface-hover: #334155;
-  --border: rgba(59, 130, 246, 0.15);
-  --border-strong: rgba(59, 130, 246, 0.3);
-  --text: #f1f5f9;
-  --text-secondary: #cbd5e1;
-  --text-muted: #94a3b8;
-  --muted: #64748b;
+  --border: rgba(59, 130, 246, 0.2);
+  --border-strong: rgba(59, 130, 246, 0.35);
+  --text: #ffffff;
+  --text-secondary: #f1f5f9;
+  --text-muted: #cbd5e1;
+  --muted: #94a3b8;
   --accent: #3b82f6;
   --accent-hover: #60a5fa;
   --accent-soft: rgba(59, 130, 246, 0.15);
@@ -106,9 +106,9 @@ header {
   margin: 0 0 16px;
   padding: 12px 16px;
   border-radius: var(--radius-sm);
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  color: var(--text-muted);
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  color: var(--text-secondary);
   font-size: 0.85rem;
   line-height: 1.5;
 }
@@ -197,7 +197,7 @@ header {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--muted);
+  color: var(--text-muted);
   border-bottom: 1px solid var(--border);
 }
 
@@ -248,7 +248,7 @@ h1 {
 .subtitle {
   margin: 3px 0 0;
   font-size: 0.84rem;
-  color: var(--muted);
+  color: var(--text-muted);
   font-weight: 450;
 }
 
@@ -491,7 +491,7 @@ input[type="text"] {
 }
 
 input[type="text"]::placeholder {
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 input[type="text"]:focus {
@@ -854,14 +854,14 @@ input[type="range"]::-moz-range-thumb {
 .history-item-meta,
 .history-item .meta {
   font-size: 0.74rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   margin-top: 6px;
   line-height: 1.4;
 }
 
 .history-item-time {
   font-size: 0.72rem;
-  color: var(--muted);
+  color: var(--text-muted);
   margin-top: 6px;
 }
 
